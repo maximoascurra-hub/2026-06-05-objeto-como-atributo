@@ -4,6 +4,29 @@
 package org.example
 import org.example.nose.Fecha
 import org.example.nose.Persona 
+import org.example.Polinomio
+import org.example.Cuadratica
 fun main() {
     println(Persona("pepe", "honguito", Fecha(5, 6, 2026)))
+    val polinomio=Polinomio()
+    println(Polinomio())
+    val cuadratica=Cuadratica()
+    println(Cuadratica())  
+    val cuadraticamejor=CuadraticaMejor()
+    println(CuadraticaMejor())
+    var objeto: Polinomio
+    objeto=Cuadratica() 
+    println(objeto)
+    objeto=CuadraticaMejor()
+    println(objeto)
+    var lista = ArrayList <Polinomio>()
+
+    lista.add(Cuadratica())
+    
+    lista.add(Polinomio())
+    
+    lista.add(CuadraticaMejor())
+    for (var p : lista){
+        println(p)
+    }
 }
