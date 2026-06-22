@@ -14,10 +14,14 @@ fun main() {
     println(Cuadratica())  
     val cuadraticamejor=CuadraticaMejor()
     println(CuadraticaMejor())
+    val cuatrinomio=Cuatrinomio()
+    println(Cuatrinomio())
     var objeto: Polinomio
     objeto=Cuadratica() 
     println(objeto)
     objeto=CuadraticaMejor()
+    println(objeto)
+    objeto=Cuatrinomio()
     println(objeto)
     var lista = ArrayList <Polinomio>()
 
@@ -26,7 +30,7 @@ fun main() {
     lista.add(Polinomio())
     
     lista.add(CuadraticaMejor())
-    for (var p : lista){
-        println(p)
+    for (polinomio in lista){
+        println(polinomio)
     }
 }
